@@ -1,0 +1,125 @@
+span.status-title {
+	font-weight: 700;
+}
+span.status-no {
+	color: #ff0000;
+	font-weight: 400;
+}
+span.status-yes {
+	color: #009c31;
+	font-weight: 400;
+}
+#checkout .loader-box {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: #00000036;
+	width: 100%;
+}
+#checkout .loader-box .blockUI {
+	z-index: 1000;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	cursor: default;
+	position: absolute;
+}
+#checkout main{
+	margin-bottom: 20px;
+	text-align: center;
+	max-width: 250px;
+	margin: 0 auto;
+}
+#checkout .payment-option-label input,#checkout .application_id_box {
+	display: none;
+}
+#checkout .checkout_title {
+	text-align:center;
+	margin:15px;
+}
+.payment-option-label label {
+	float: none;
+}
+.payment-option-label label input[type="radio"]:checked+div {
+	background: #fff;
+}
+.payment-option-label label input[type="radio"]:checked+div:before {
+	border-radius: 21px;
+	content: "\2713";
+	position: relative;
+	font-weight: 400;
+	background: 0 0;
+	color: #fff;
+	font-size: 19px;
+	text-align: center;
+	margin: auto;
+	line-height: 1;
+	vertical-align: top;
+	position: absolute;
+	border: 1px solid;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	background-image: linear-gradient(220deg, #174e90 0%, #174e90 100%);
+	top: -10px;
+	right: -10px;
+}
+.payment-option-label label div {
+	position: relative;
+}
+.payment-option-label label #snap-checkout-button {
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding: 10px;
+	border-radius: 5px;
+}
+#visa-button-container,
+#snap-checkout-button {
+	clear: both;
+}
+#snap-checkout-button img {
+	/*	background: #174e90;*/
+}
+div#visa-button-container button,
+#snap-place-order-button button {
+	background: #174e90 !important;
+	color: #fff !important;
+	border: 0;
+	border-radius: 50px;
+	height: 55px;
+	width: 250px;
+	font-size: 20px;
+	box-shadow: 0 0 4px #174e90;
+}
+#snap-place-order-button button {
+	display: initial !important;
+}
+#snap-place-order-button {
+	text-align: left;
+	margin-bottom: 20px;
+}
+p.wc_snap_error {
+	margin: 10px 0;
+	border: 1px solid #F44336;
+	padding: 10px;
+	border-radius: 5px;
+	background: antiquewhite;
+	color: #F44336;
+}
+.woocommerce .snap-finace-button,
+.woocommerce .snap-finace-button:hover {
+	color: transparent !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-color: transparent !important;
+	background-size: 100% 100%;
+}
